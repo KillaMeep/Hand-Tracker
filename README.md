@@ -30,6 +30,9 @@ if distance(8, 4) < 40 + scalar and distance(8, 12) > 50 + scalar and distance(1
 if distance(8,5)<30+scalar and distance(12,9)<30+scalar and distance(16,13)<30+scalar and distance(20,17)<30+scalar:
 ```
 You can use these checks to write over the image with OpenCV's ```cv2.putText``` function. This can be used to display text when a hand sign is detected.
+##Extra
+You may notice a variable named "scalar" being used. This is used in addition with the other file, named baseline- which creates a baseline image of your hand to more accurately scale at distance.
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
