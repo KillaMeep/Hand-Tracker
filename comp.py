@@ -68,7 +68,10 @@ while True:
             "pointer":distance(8,0),
             "middle":distance(12,0),
             "ring":distance(16,0),
-            "pinkie":distance(20,0)
+            "pinkie":distance(20,0),
+            "pointer_base":distance(5,0),
+            "pinkie_base":distance(17,0),
+            "raw":cordarr
         }
     
     #finals
