@@ -15,7 +15,7 @@ To add a new gesture you can use individual hand ids. These are labeled per land
 
 ![alt text](examples/ids.png)
 
-There is also a function called "Distance" that compares 2 landmark ids and finds a distance between them.
+There is also a function called "distance" that compares 2 landmark ids and finds a distance value between them.
 ```python
 distance(5,8) #compares distance from landmark 5 to landmark 8
 ```
