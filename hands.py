@@ -39,6 +39,7 @@ while True:
                 cordarr.append([cx,cy])
                 #if id == 8: #pointer detection, useless but cool
                 #    cv2.circle(img, (cx, cy), 15, (139, 0, ), cv2.FILLED)
+                cv2.putText(img, f"{id}", (cx+5, cy), cv2.FONT_HERSHEY_SIMPLEX, .5, (0,0,100), 2) #debug id check
             mpDraw.draw_landmarks(img, handlms, mpHands.HAND_CONNECTIONS,mp_drawing_styles.get_default_hand_landmarks_style(),mp_drawing_styles.get_default_hand_connections_style())
 #fps calcs
     
