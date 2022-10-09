@@ -27,7 +27,7 @@ if distance(8, 4) < 40 + scalar and distance(8, 12) > 50 + scalar and distance(1
 
 ```python
 #check if all fingers are touching palm, thus making a fist
-if distance(8,5)<30 + scalar and distance(12,9)<30+scalar and distance(16,13)<30+scalar and distance(20,17)<30+scalar:
+if distance(8,5)<30+scalar and distance(12,9)<30+scalar and distance(16,13)<30+scalar and distance(20,17)<30+scalar:
 ```
 You can use these checks to write over the image with OpenCV's ```cv2.putText``` function. This can be used to display text when a hand sign is detected.
 ## Contributing
