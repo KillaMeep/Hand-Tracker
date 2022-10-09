@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-To add a new gesture you can use individual hand ids. These are labeled per landmark on a hand from 0-20. They should be saved in an array called "cordarr". 
+Using mediapipe to label landmarks with an id can be used to compare others, thus allowing you to find patterns within a hand. 
 
 ![alt text](examples/ids.png)
 
