@@ -15,7 +15,11 @@ print('Launching! Press "ESC" to exit.')
 global cordarr
 cordarr=[]
 
-def distance(finger1x, finger1y, finger2x, finger2y):
+def distance(finger1,finger2):
+    finger1x=finger1[0]
+    finger1y=finger1[1]
+    finger2x=finger2[0]
+    finger2y=finger2[1]
     xnumbers = (finger2x - finger1x)**2
     ynumbers = (finger2y - finger1y)**2
     numbers = xnumbers + ynumbers
@@ -59,12 +63,20 @@ while True:
 
     if cordarr != [] and len(cordarr) < 22:
         # cv2.putText(img, "Index", (cordarr[8][0], cordarr[8][1]), cv2.FONT_HERSHEY_SIMPLEX, .6, (94.1,12.5,62.7), 2)
-        if distance(cordarr[8][0], cordarr[8][1], cordarr[12][0], cordarr[12][1]) > 160 and distance(cordarr[1][0], cordarr[1][1], cordarr[12][0], cordarr[12][1]) < 65:
+        if distance(cordarr[8], cordarr[12]) > 160 and distance(cordarr[1], cordarr[12]) < 65:
             cv2.putText(img, "Pointing", (0, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (94.1,12.5,62.7), 2)
             print("POINTING")
-        elif distance(cordarr[8][0], cordarr[8][1], cordarr[4][0], cordarr[4][1]) < 30 and distance(cordarr[8][0], cordarr[8][1], cordarr[12][0], cordarr[12][1]) > 50:
+        elif distance(cordarr[8][,cordarr[4],cordarr[4]) < 30 and distance(cordarr[8],cordarr[12]) > 50:
             cv2.putText(img, "OK", (0, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (94.1,12.5,62.7), 2)
-    
+        
+            
+            
+            
+            #elif distance(cordarr[6][0],codrarr[6][1],)
+
+
+
+
     #finals
     cv2.imshow("Hand Tracker", img)
     k = cv2.waitKey(1) & 0xFF
