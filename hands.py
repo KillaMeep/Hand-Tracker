@@ -66,7 +66,7 @@ while True:
         if distance(cordarr[8], cordarr[12]) > 160 and distance(cordarr[1], cordarr[12]) < 65:
             cv2.putText(img, "Pointing", (0, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (94.1,12.5,62.7), 2)
             print("POINTING")
-        elif distance(cordarr[8],cordarr[4],cordarr[4]) < 30 and distance(cordarr[8],cordarr[12]) > 50:
+        elif distance(cordarr[8],cordarr[4]) < 30 and distance(cordarr[8],cordarr[12]) > 50:
             cv2.putText(img, "OK", (0, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (94.1,12.5,62.7), 2)
         
             
