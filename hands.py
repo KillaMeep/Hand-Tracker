@@ -58,7 +58,7 @@ while True:
 
     if cordarr != [] and len(cordarr) < 22:
         # cv2.putText(img, "Index", (cordarr[8][0], cordarr[8][1]), cv2.FONT_HERSHEY_SIMPLEX, .6, (94.1,12.5,62.7), 2)
-        if distance(cordarr[8][0], cordarr[8][1], cordarr[12][0], cordarr[12][1]) > 160 and distance(cordarr[1][0], cordarr[1][1], cordarr[12][0], cordarr[12][1]) < 50:
+        if distance(cordarr[8][0], cordarr[8][1], cordarr[12][0], cordarr[12][1]) > 160 and distance(cordarr[1][0], cordarr[1][1], cordarr[12][0], cordarr[12][1]) < 65:
             cv2.putText(img, "Pointing", (0, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (94.1,12.5,62.7), 2)
             print("POINTING")
         elif distance(cordarr[8][0], cordarr[8][1], cordarr[4][0], cordarr[4][1]) < 30 and distance(cordarr[8][0], cordarr[8][1], cordarr[12][0], cordarr[12][1]) > 50:
